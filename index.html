@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Pokemon Collectors</title>
+    <title> Poll Prepared
+    </title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Diplomata+SC|Lemonada|Raleway|Rubik+Mono+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:800|Work+Sans:900" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content">
-        <div>
-            <h1>Pokemon Collectors</h1>
-        </div>
-        <div class="instructions">
-            <h2>Here's how to play the game!</h2>
-            <br>
-            <ol>
-                <li>The game will assign you a number to achieve</li>
-                <li>Below you will find four wild Pokemon!</li>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar" role="navigation">
+                    <div class="navbar-header">
+                        
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a class="navbar-brand" href="#">Poll Prepared  </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
                 <br>
-                <ul>
-                    <li id="orange">Charmander</li>
-                    <li id="yellow">Jolteon</li>
-                    <li id="green">Bulbasaur</li>
-                    <li id="blue">Mudkip</li>
-                </ul>
-                <br>
-                <li>Each Pokemon has a specific point value that will be added to your total score after each time they are clicked.</li>
-                <br>
-                <li>You win by matching your total score to the random number that the game picks for you.</li>
-                <br>
-                <li>You lose if your total score exceeds the random number that was generated.</li>
-                <br>
-                <li>You will not know the value of each crystal until you click on it!</li>
-                <br>
-                <li>The value of each crystal will change each time you play the game.</li>
-                <br>
-                <li>Good luck and have fun!</li>
-            </ol>
-            <br>
-            <br>
-        </div>
-        <div class="numberToMatch">
-            <h3>Number to Reach: 
-            <div id= "randomNumber"></div>
-        </h3>
-        </div>
-        <br>
-        <div class="winsAndLosses">
-            <h4>Wins:
-            <div id= "numberofWins"></div>
-            <br>
-            Losses:
-            <div id= "numberofLosses"></div>
-        </h4>
-        </div>
-        <div class="gems">
-            <img src="assets/images/gemTwo.gif" class=g emImage id="gemOne" alt="Yellow Gem" height="100px">
-            <img src="assets/images/gemOne.gif" class=g emImage id="gemTwo" alt="OrangeGem" height="100px">
-            <img src="assets/images/gemThree.gif" class=g emImage id="gemThree" alt="Green Gem" height="100px">
-            <img src="assets/images/gemFour.gif" class=g emImage id="gemFour" alt="Blue Gem" height="90px">
-        </div>
-        <div class="playerTotal">
-            <h5>Your total score is:
-            <div id="resultTotal"></div>
-        </h5>
-        </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
-        <iframe width="0" height="0" src="https://www.youtube.com/embed/wR3gaYTqkDQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
-</body>
-
-</html>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="jumbotron"><br><br><br>
+                                <h2>
+                                Begin your search here!
+                                 </h2>
+                                <h3> In the search bar below, type in the name of the politician or the zip code of the district you want to search for.
+                                </h3>
+                                <div><br>
+                                <form class="navbar-form" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search Name or Zip Code">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">
+                                        Search
+                                    </button>
+                                </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
