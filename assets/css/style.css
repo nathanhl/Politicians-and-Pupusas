@@ -35,13 +35,23 @@ a {
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 70px;
     color:white;
     font-family: 'Work Sans', sans-serif;
+    text-shadow: -2px 2px #1e43fe;
 }
 h3{
 	font-size:30px;
 	color:white;
 	font-family: 'Work Sans', sans-serif;
+	text-shadow: -2px 2px #ff0000;
 
+}
+
+.form-group{
+	width:50%;
+}
+
+.navbar-form .form-control{
+	width:100%;
 }
