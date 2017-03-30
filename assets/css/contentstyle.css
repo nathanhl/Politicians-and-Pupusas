@@ -6,9 +6,9 @@ body {
 }
 
 .navbar {
-    b ackground-color: transparent;
-    b ackground: transparent;
-    b order-color: transparent;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
     color: white;
     text-family: georgia;
 }
