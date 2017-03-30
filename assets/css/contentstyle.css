@@ -1,0 +1,44 @@
+
+body {
+    bac kground-image: url("../images/starsbackground.png");
+    width:100%;
+    background-color: #C2EAFE;
+}
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    color: white;
+    text-family: georgia;
+}
+
+img{
+	width:200px;
+	padding-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+}
+a {
+	color: white ;
+}
+
+.btn{
+	color:black;
+	background-color:red;
+	margin-right: 15px;
+}
+
+#voteButtonDiv{
+	margin-right: 5px;
+}
+
+#voteButtonEnglish{
+    margin-right: 5px:
+}
+
+.voters{
+    width:180px;
+}
